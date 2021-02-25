@@ -1,6 +1,6 @@
 # Progetto Esame Radici
 -   [Introduzione](#Introduzione)
--   [Cosa prevede il progetto](#Cosa-prevede-il-progetto?)
+-   [Cosa prevede il progetto?](#Cosa-prevede-il-progetto?)
 -   [Utenti](#Utenti)
 -   [Funzionalità](#Funzionalità)
 -   [Implementazione](#Implementazione)
