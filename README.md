@@ -1,5 +1,5 @@
 # Progetto Esame Radici
-- - [Introduzione](#Introduzione)
+-   [Introduzione](#Introduzione)
 -   [Descrizione](#Descrizione)
 -   [Utenti](#Utenti)
 -   [Funzionalità](#Funzionalità)
@@ -9,7 +9,10 @@
 
 > 1. ## Introduzione
 > 
->> 
+>> Il mio progetto di fine anno sarà un'automatizzazione di una realtà attualmente usata su fogli google.
+>> Cosa permette di fare questo foglio?
+>> Il foglio permette l'inserimento di nominativi di player per la stilazione settimanale di una classica:
+>> ![Foglio google!]("Esempio")
 
 > 2. ## Descrizione
 > 
