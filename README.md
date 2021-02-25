@@ -1,6 +1,6 @@
 # Progetto Esame Radici
 -   [Introduzione](#Introduzione)
--   [Cosa prevede il progetto?](#Cosa-prevede-il-progetto-?)
+-   [Cosa prevede il progetto](#Cosa-prevede-il-progetto)
 -   [Utenti](#Utenti)
 -   [Funzionalità](#Funzionalità)
 -   [Implementazione](#Implementazione)
@@ -16,7 +16,7 @@ Cosa permette di fare questo foglio?
 -  Calcolare la classifica settimanale
 -  Inserire nuovi fogli settimanalmente per ogni nuova competizione
 
-2. ## Cosa prevede il progetto?
+2. ## Cosa prevede il progetto
      - Automazione della creazione dei fogli
      - Interfaccia admin
      - Interfaccia utente
