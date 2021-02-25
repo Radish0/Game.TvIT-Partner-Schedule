@@ -52,7 +52,7 @@ Cosa permette di fare questo foglio?
          - Api per modifica e aggiornamento del databse
          - Api per la newsletter
       - Realizzazione di un database mySQL
-        Entità progettate:
+         Entità progettate:
          - Admin (ID*, Email)
          - Utente(ID*, Mail, Realtà(FK))
          - Realta(ID*, Nome, Numero_tornei, Contatto)
