@@ -1,6 +1,6 @@
 # Progetto Esame Radici
 -   [Introduzione](#Introduzione)
--   [Descrizione](#Descrizione)
+-   [Descrizione](#Cosa-prevede-il-progetto?)
 -   [Utenti](#Utenti)
 -   [Funzionalità](#Funzionalità)
 -   [Implementazione](#Implementazione)
@@ -16,13 +16,17 @@
 > -  Calcolare la classifica settimanale
 > -  Inserire nuovi fogli settimanalmente per ogni nuova competizione
 
-> 2. ## Descrizione
-> 
-> 
+> 2. ## Cosa prevede il progetto?
+>     - Automazione della creazione dei fogli
+>     - Interfaccia admin
+>     - Interfaccia utente
+>     - Calcolo automatico della classifica
+>     - Newsletter per gli aggiornamenti
+>     - Registrazione/Login
 
 > 3. ## Utenti
-> 
->
+>     - Utilizzatore
+>     - Manutentore/Admin
 
 > 4. ## Funzionalità
 > 
