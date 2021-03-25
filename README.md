@@ -1,12 +1,28 @@
 # Progetto Esame Radici
 -   [Introduzione](#Introduzione)
 -   [Cosa prevede il progetto](#Cosa-prevede-il-progetto)
--   [Utenti](#Utenti)
--   [Funzionalità](#Funzionalità)
--   [Implementazione](#Implementazione)
+-   [Progettazione concettuale e logica del database](#Progettazione-concettuale-e-logica-del-database])
+-   [Soluzione proposta](#Soluzione-proposta)
+-   [Analisi](#Analisi)
 
 
 1. ## Introduzione
+   
+   
+2. ## Cosa prevede il progetto
+
+
+3. ## Progettazione concettuale e logica del database
+
+
+4. ## Soluzione proposta
+
+
+6. ## Analisi
+
+
+
+
 
 Il mio progetto di fine anno sarà un'automatizzazione di una realtà attualmente usata su fogli di google.
 Cosa permette di fare questo foglio?
