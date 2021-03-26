@@ -1,4 +1,4 @@
-# Progetto Esame Radici
+# Game.Tv IT Partner Schedule
 -   [Introduzione](#Introduzione)
 -   [Cosa prevede il progetto](#Cosa-prevede-il-progetto)
 -   [Progettazione concettuale e logica del database](#Progettazione-concettuale-e-logica-del-database])
