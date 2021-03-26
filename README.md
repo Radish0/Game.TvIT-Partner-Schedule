@@ -53,19 +53,19 @@
       - Vedere la classifica aggiornata in tempo reale
       - Supporto
 
-Per la realizzazione sono progettate le seguenti pagine:
-   - Realizzazione di pagine HTML
-      - Pagina di Login/Registrazione
-      - Pagina per l'inserimento dei dati dei vincitori
-      - Pagina per la classifica 
-      - Pagina Admin
-      - Pagina per la visualizzazione della coda delle richieste d'accesso
-      - Pagina per la realizzazione e la struttura delle tabelle
-      - Pagina per la newsletter
-   - Realizzazione di API rest in PHP
-      - Pagina per l'autenticazione
-      - Pagina per modifica e aggiornamento del databse
-      - Pagina per la newsletter
+   Per la realizzazione sono progettate le seguenti pagine:
+      - Realizzazione di pagine HTML
+         - Pagina di Login/Registrazione
+         - Pagina per l'inserimento dei dati dei vincitori
+         - Pagina per la classifica 
+         - Pagina Admin
+         - Pagina per la visualizzazione della coda delle richieste d'accesso
+         - Pagina per la realizzazione e la struttura delle tabelle
+         - Pagina per la newsletter
+      - Realizzazione di API rest in PHP
+         - Pagina per l'autenticazione
+         - Pagina per modifica e aggiornamento del databse
+         - Pagina per la newsletter
 
 
 
