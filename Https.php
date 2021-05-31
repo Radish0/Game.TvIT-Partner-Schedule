@@ -9,4 +9,4 @@ if (!(isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' ||
    header('Location: ' . $redirect);
    exit();
 }
-?>
+?>
