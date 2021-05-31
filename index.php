@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <?php 
-require("Https.php"); 
+    require('Https.php');
 ?>
 <html>
 
@@ -51,7 +51,7 @@ require("Https.php");
 									<h2>Do you already work with us?</h2>
 									<p>Click the button below and Log into the host dashboard. You can also regist to an existing community</p>
 									<ul class="actions">
-										<li><a href="Login.html" class="button">Enter in the dashboard</a></li>
+										<li><a href="Log.php" class="button">Enter in the dashboard</a></li>
 									</ul>
 								</div>
 							</div>
@@ -64,7 +64,7 @@ require("Https.php");
 									<p>Do you have a community? Do you want to organize prize tournaments? <br/>
 										Send a partner request and our managers will analyze it!</p>
 									<ul class="actions">
-										<li><a href="Register.html" class="button">Submit a request</a></li>
+										<li><a href="Register.php" class="button">Submit a request</a></li>
 									</ul>
 								</div>
 							</div>
@@ -76,7 +76,7 @@ require("Https.php");
 									<h2>Are you in an already registered community?</h2>
 									<p>Are you in an already registered community? Do you want to request access to your community? <br/>
 									<ul class="actions">
-										<li><a href="Request.html" class="button">Submit a request</a></li>
+										<li><a href="ReqToAcommunity.php" class="button">Submit a request</a></li>
 									</ul>
 								</div>
 							</div>
@@ -118,61 +118,18 @@ require("Https.php");
 						<div class="inner">
 							<h2>Weekly ranking</h2>
 							<p>Weekly brawl stars Ranking based on the Italian Championship</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
+							<div id="tablearea" class="table-wrapper" style="padding-top: 20px;">
+								<table id="Table">
+									<thead>
+										<tr>
+											<th>Player</th>
+											<th>Score</th>
+										</tr>
+									</thead>
+								</table>
 							</div>
-						</div>
-					</section>
-
 			</div>
+            </section>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
@@ -193,4 +150,4 @@ require("Https.php");
 			<script src="assets/js/main.js"></script>
 
 	</body>
-</html>
+</html>
