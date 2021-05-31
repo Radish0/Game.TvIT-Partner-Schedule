@@ -1,5 +1,4 @@
 <?php
-require("Https.php");
 function errore($response_code,$message){
 	http_response_code($response_code);
 	header("Content-type: application/json; charset: UTF-8");
@@ -20,26 +19,28 @@ if (!isset($_REQUEST["Mail"]) || strlen($_REQUEST["Mail"])==0) errore(400,"Param
 if (!isset($_REQUEST["Description"]) || strlen($_REQUEST["Description"])==0) errore(400,"Parametri errati. Description expected");
 
 try {
+
 	$hostname = "localhost";
     $dbname = "my_radicig";
     $user = "root";
     $pass = "";
     $db = new PDO ("mysql:host=$hostname;dbname=$dbname", $user, $pass);
+    
 } catch (Exception $e) {
   errore(500,"SERVER ERROR. PDO connection failed: " . $e->getMessage());
 }
-$sql = $db->prepare("INSERT INTO Richieste (Nome, Gioco, Guild, Link, Mail, Descrizione) VALUES (?,?,?,?,?,?)");
+$sql = $db->prepare("INSERT INTO richieste (Nome, Gioco, Guild, Link, Mail, Descrizione,State) VALUES (?,?,?,?,?,?,?)");
 try
 { 
-  $sql->execute([$_REQUEST["Name"], $_REQUEST["Game"], $_REQUEST["GuildName"], $_REQUEST["Link"], $_REQUEST["Mail"], $_REQUEST["Description"]]);
+  $sql->execute([$_REQUEST["Name"], $_REQUEST["Game"], $_REQUEST["GuildName"], $_REQUEST["Link"], $_REQUEST["Mail"], $_REQUEST["Description"],"Pending"]);
+  echo("prova");
+  http_response_code(200);
+  header("Content-type: application/json; charset: UTF-8");
   }
 catch(PDOException $e)
 {
   errore(404,"database not exists");
 }
 
-
-http_response_code(200);
-header("Content-type: application/json; charset: UTF-8");
-exit
-?>
+exit;
+?>
