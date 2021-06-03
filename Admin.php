@@ -3,11 +3,11 @@
 <?php 
     session_start();
     require('Https.php');
-    /*if(!isset($_SESSION["username"]) && !isset($_SESSION["password"])){
+    if(!isset($_SESSION["Nome"]) && !isset($_SESSION["Password"]) && !isset($_SESSION["Tipo"])){
         http_response_code(401);
-        header('Location: Login.php');
+        header('Location: Log.php');
         die();
-    }*/
+    }
 
 ?>
 	<head>
@@ -217,6 +217,7 @@
 					
 					var formData = new FormData();
 					formData.append("Mail", rispObj[0]["Mail"]);
+                    formData.append("Name", rispObj[0]["Nome"]);
 					formData.append("Stato", state);
 
 
