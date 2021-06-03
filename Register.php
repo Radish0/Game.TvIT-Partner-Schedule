@@ -20,7 +20,8 @@
 						<li><a href="index.php">Home</a></li>
 						<li><a href="Log.php" >Login</a></li>
 						<li><a href="Register.php" class="active">Work with us</a></li>
-                        <li><a href="Request.php">Require access</a></li>
+                        <li><a href="ReqToAcommunity.php">Require access</a></li>
+                        
 					</ul>
 				</nav>
 			</header>
