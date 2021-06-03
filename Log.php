@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <?php 
     require('Https.php');
+    session_start();
 ?>
 
 <html>
@@ -21,7 +22,7 @@
 						<li><a href="index.php">Home</a></li>
 						<li><a href="Log.php" class="active">Login</a></li>
 						<li><a href="Register.php">Work with us</a></li>
-                        <li><a href="Request.php">Require access</a></li>
+                        <li><a href="ReqToAcommunity.php">Require access</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -40,8 +41,6 @@
 										<br/>
 										<input type="password" name="demo-ps" id="demops" value="" placeholder="Password" required="required"/>
 										<h3 id="error"></h3>
-										<br/>
-										<h4 id="error"></h4>
 									</div>
 									<div>
 									<center>
@@ -69,6 +68,7 @@
 
 		<!-- Scripts -->
 			<script>
+            var Controllo=true;
 				function Submit(){
                 Controlla();
 				if(Controllo==true){
@@ -76,18 +76,31 @@
 					var richiesta=new XMLHttpRequest();
 					richiesta.open("POST", url, true);
 					var formData = new FormData();
-					formData.append("Email", document.getElementById("demomail").value);
+					formData.append("Mail", document.getElementById("demomail").value);
 					formData.append("Password", document.getElementById("demops").value);
 
 					richiesta.send(formData);
 					richiesta.onreadystatechange=function(){
 						if (this.readyState==4 && this.status==200){
-							
+							var risp = this.responseText;
+            				var rispObj = JSON.parse(risp);
+                            console.log(rispObj);
+                            if(rispObj["description"]=="Gestore"){
+                            	location.href="Gestore.php";
+                                }else{
+                                location.href="Admin.php";
+                                }
 						}
+                        else if(this.readyState==4 && this.status==404){
+                        document.getElementById("error").innerHTML = "You are not registered";
+                        }
+                        else if(this.readyState==4 && this.status==401){
+                        document.getElementById("error").innerHTML = "Wrong Password";
+                        }
 					}
                     
                     }else{
-                    document.getElementById("errore").innerHTML = errore;
+                    document.getElementById("error").innerHTML = errore;
                     document.getElementById("demomail").focus;
                     }
 				}
@@ -95,11 +108,11 @@
 				function Controlla(){
                 	if(document.getElementById("demomail").value == ''){
                     Controllo = false;
-					errore = "Si prega di inserire tutti i campi";
+					errore = "Compile all the fields";
                     }
 					else if(document.getElementById("demops").value == ''){
                     Controllo = false;
-                    errore = "Si prega di inserire tutti i campi";}
+                    errore = "Compile all the fields";}
 				}
 
 			</script>
