@@ -29,11 +29,10 @@ try {
 } catch (Exception $e) {
   errore(500,"SERVER ERROR. PDO connection failed: " . $e->getMessage());
 }
-$sql = $db->prepare("INSERT INTO richieste (Nome, Gioco, Guild, Link, Mail, Descrizione,State) VALUES (?,?,?,?,?,?,?)");
+$sql = $db->prepare("INSERT INTO community (Nome, Gioco, NomeGilda, Link, Mail, Descrizione,Stato) VALUES (?,?,?,?,?,?,?)");
 try
 { 
   $sql->execute([$_REQUEST["Name"], $_REQUEST["Game"], $_REQUEST["GuildName"], $_REQUEST["Link"], $_REQUEST["Mail"], $_REQUEST["Description"],"Pending"]);
-  echo("prova");
   http_response_code(200);
   header("Content-type: application/json; charset: UTF-8");
   }
